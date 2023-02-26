@@ -3,11 +3,13 @@ from typing import List
 import requests
 from bs4 import BeautifulSoup
 
+
 class DigForRates:
-    '''
-    retrieve raw HTML, parse into soup objects and looks for exchange rates. 
+    """
+    retrieve raw HTML, parse into soup objects and looks for exchange rates.
     Echange rates are in <tr> elements. Each <tr> elemet contains <td> exchange rates.
-    '''
+    """
+
     URL = "https://www.exchange-rates.org/"
 
     def __init__(self):
